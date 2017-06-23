@@ -1,4 +1,4 @@
-package com.liu.CatchYou.common.Event;
+package com.liu.CatchYou.common.event;
 
 import org.junit.Test;
 
