@@ -18,7 +18,7 @@ public class Collections {
         }
         System.out.println(list1);
         System.out.println(list2);
-        for (String str0: list2) {
+        for (String str0: set) {
             System.out.println(str0);
         }
      }
