@@ -19,10 +19,22 @@ public class Maps {
         System.out.println(map1);
         System.out.println(map2);
 
-        Iterator iterator = map1.keySet().iterator();
+        if ( map1.keySet().contains("1")) {
+            System.out.println("yes" +
+                    "111");
+        }
+
+        System.out.println(map1.values());
+
+        Iterator iterator = map1.entrySet().iterator();
+        while (iterator.hasNext()) {
+            Map.Entry entry = (Map.Entry) iterator.next();
+            System.out.println("key : " + entry.getKey() + " value : " + entry.getValue());
+        }
+        /*Iterator iterator = map1.keySet().iterator();
         while (iterator.hasNext()) {
             String key = iterator.next().toString();
             System.out.println("key : " + key + "value : " + map1.get(key));
-        }
+        }*/
     }
 }

@@ -87,8 +87,8 @@ public class client {
     public static void main(String[] args) {
         Map<String, String> map = new HashMap<String, String>();
         map.put("a", "xixi");
-        //map.put("b", "900");
-        String res = client.sendGet("http://www.shenbicheng.com",map);
+        map.put("b", "900");
+        String res = client.sendGet("http://www.baidu.com",map);
         System.out.println(res);
     }
 }
