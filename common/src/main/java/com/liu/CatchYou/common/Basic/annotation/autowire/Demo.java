@@ -5,7 +5,7 @@ package com.liu.CatchYou.common.Basic.annotation.autowire;
  */
 public class Demo {
     @MyAutowire
-    public Apple apple;
+    private Apple apple;
 
     public void say() {
         apple.say();
