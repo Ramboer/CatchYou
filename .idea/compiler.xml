@@ -11,7 +11,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="CatchYou" target="1.5" />
-      <module name="common" target="1.5" />
+      <module name="common" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -6,14 +6,19 @@ package com.liu.CatchYou.common.Basic.threads;
 public class MyThreads extends Thread {
 
     @Override
-    public void run() {
-        for (int i = 0; i < 10; i++) {
-            System.out.println("this is count : " + i );
-        }
+    public synchronized void run() {
+            for (int i = 0; i < 1000; i++) {
+                System.out.println(Thread.currentThread().getName() +  " this is count : " + i );
+            }
     }
 
     public static void main(String[] args) {
         MyThreads myThreads = new MyThreads();
+        myThreads.setName("A");
+        MyThreads myThreads1 = new MyThreads();
+        myThreads1.setName("B");
         myThreads.start();
+        myThreads1.start();
+
     }
 }

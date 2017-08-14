@@ -5,13 +5,18 @@ package com.liu.CatchYou.common.Basic.threads;
  */
 public class MyRunnable implements Runnable {
     public void run() {
-        for (int i = 0; i <10; i++) {
-            System.out.println("this is count : " + i);
+        synchronized (this) {
+            for (int i = 0; i <1000; i++) {
+                System.out.println(Thread.currentThread().getName() + " this is count : " + i);
+            }
         }
     }
 
     public static void main(String[] args) {
-        Thread thread = new Thread(new MyRunnable());
+        MyRunnable myRunnable = new MyRunnable();
+        Thread thread = new Thread(myRunnable,"A");
+        Thread thread1 = new Thread(myRunnable, "B");
         thread.start();
+        thread1.start();
     }
 }

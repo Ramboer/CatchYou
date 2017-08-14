@@ -39,7 +39,7 @@ public class Hello {
             if ("getName".equals(method.getName())) {
                 String name1 = (String) method.invoke(object);
                 System.out.println(name1);
-            }
+               }
         }
 
     }
