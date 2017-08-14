@@ -16,6 +16,7 @@ public class MyReflex {
                 Class clazzObject = (Class) field.getGenericType();
                 try {
                     Object object1 = clazzObject.newInstance();
+                    field.setAccessible(true);
                     field.set(object,object1);
                     res = true;
                 } catch (InstantiationException e) {
