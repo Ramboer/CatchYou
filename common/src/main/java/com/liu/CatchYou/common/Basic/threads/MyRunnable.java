@@ -16,6 +16,7 @@ public class MyRunnable implements Runnable {
             e.printStackTrace();
         }
     }
+    }
 
     public static void main(String[] args) {
         MyRunnable myRunnable = new MyRunnable();
