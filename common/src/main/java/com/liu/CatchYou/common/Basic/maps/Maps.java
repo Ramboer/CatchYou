@@ -1,8 +1,6 @@
 package com.liu.CatchYou.common.Basic.maps;
 
-import java.util.HashMap;
 import java.util.Iterator;
-import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
@@ -10,8 +8,8 @@ import java.util.Map;
  */
 public class Maps {
     public static void main(String[] args) {
-        Map<String, String> map1 = new HashMap<String, String>();
-        Map<String, String> map2 = new LinkedHashMap<String, String>();
+        Map<String, String> map1 = com.google.common.collect.Maps.newHashMap();
+        Map<String, String> map2 = com.google.common.collect.Maps.newLinkedHashMap();
         for (int i = 0; i < 5; i++) {
             map1.put(""+ i,  i + "");
             map2.put("" + i,  i + "" );
