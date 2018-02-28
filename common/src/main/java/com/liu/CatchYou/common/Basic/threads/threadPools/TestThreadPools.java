@@ -21,15 +21,14 @@ public class TestThreadPools {
         for (int i = 0; i < 12; i++) {
             executorService2.execute(task);
         }
+        Thread.sleep(1000);
 
-//        Thread.sleep(1000);
-//
-//        System.out.println("\n");
-//        ExecutorService executorService3 = Executors.newCachedThreadPool();
-//
-//        for (int j = 0; j < 10; j++) {
-//            executorService3.execute(task);
-//        }
+        System.out.println("\n");
+        ExecutorService executorService3 = Executors.newCachedThreadPool();
+
+        for (int j = 0; j < 10; j++) {
+            executorService3.execute(task);
+        }
 
     }
 }

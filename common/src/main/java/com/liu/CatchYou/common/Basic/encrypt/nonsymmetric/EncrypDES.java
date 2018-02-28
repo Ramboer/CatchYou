@@ -58,7 +58,7 @@ public class EncrypDES {
     public static void main(String[] args) {
         try {
             EncrypDES encrypDES = new EncrypDES();
-            String str = "Jia Xin";
+            String str = "Su Ki";
             byte[] en = encrypDES.encrytor(str);
             byte[] de = encrypDES.decryptor(en);
             System.out.println("明文： " + str);
