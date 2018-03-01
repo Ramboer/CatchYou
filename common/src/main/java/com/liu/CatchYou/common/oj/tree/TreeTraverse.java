@@ -50,7 +50,6 @@ public class TreeTraverse {
         Node C = new Node(9, F, null);
         Node B = new Node(3, D, E);
         Node A = new Node(6, B, C);
-
         rootFirst(A);
     }
 }
